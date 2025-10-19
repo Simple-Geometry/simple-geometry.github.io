@@ -5,7 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMPLE GEOMETRY</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <style>
+    body {
+        background-color: #310acb;
+        color: #f0f0f0;
+        font-family: "DM Sans", sans-serif;
+        max-width: 800px;
+        margin: 4rem auto;
+        padding: 0 1rem;
+        line-height: 1.6;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        letter-spacing: 1px;
+    }
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #e0e0ff;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    nav li {
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    nav li:hover {
+        color: #ffdd57;
+    }
+    .services {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    .service-box {
+        background-color: #4c2de2;
+        border-radius: 8px;
+        padding: 1rem;
+        flex: 1 1 45%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .service-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    .service-box h3 {
+        margin-top: 0;
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+    .service-box p {
+        margin: 0.5rem 0;
+        color: #e0e0ff;
+    }
+    .contact-box {
+        background-color: #4c2de2;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    .contact-box p {
+        margin: 0;
+        font-size: 1rem;
+        color: #e0e0ff;
+    }
+    .contact-box a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-weight: bold;
+        color: #ffdd57;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .contact-box a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    </style>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1H86607DX"></script>
@@ -17,30 +129,34 @@
     gtag('config', 'G-Q1H86607DX');
 </script>
 <body>
-    <div class="header">
-        <div class="navbar">
-            <h1>Simple Geometry</h1>
+    <header>
+        <h1>Simple Geometry</h1>
+        <nav>
             <ul>
                 <li>About</li>
                 <li>Services</li>
                 <li>Contact</li>
             </ul>
+        </nav>
+    </header>
+    <p>Simple Geometry is a web design & development studio dedicated to creating lightweight sites.</p>
+    <h2>Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>One-Pager</h3>
+            <p>Make a quick online presence</p>
+            <p><strong>$900</strong></p>
         </div>
-        <div class="hero">
-            <p>Simple Geometry is a web design & development studio dedicated to creating lightweight sites.</p>
+        <div class="service-box">
+            <h3>Starter Site</h3>
+            <p>Up to five unique web pages</p>
+            <p><strong>$1600</strong></p>
         </div>
     </div>
-    <div class="packages">
-        <h2>Services</h2>
-        <ul>
-            <li>One-Pager</li>
-            <li>Starter Site</li>
-        </ul>
-    </div>
-    <div class="footer">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:simpgeometry@gmail.com">simpgeometry@gmail.com</a></p>
-        <p>&copy; Simple Geometry 2025. All Rights Reserved.</p>
+    <h2>Contact</h2>
+    <div class="contact-box">
+        <p>Email us at:</p>
+        <a href="mailto:simpgeometry@gmail.com">simpgeometry@gmail.com</a>
     </div>
 </body>
 </html>
